@@ -31,3 +31,4 @@ public class Main {
 		System.out.println("O resultado da Media Ponderada é: " + res);
 	}
 }
+//a

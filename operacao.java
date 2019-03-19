@@ -67,3 +67,4 @@ public class Operacao {
 		this.resultado = resultado;
 	}
 }
+//a
