@@ -1,32 +1,34 @@
-public class Operacao {
+package operacoes;
+public class operacao {
 	private int num1;
 	private int num2;
 	private double resultado;
 
-	public Operacao(int num1, int num2) {
+	public operacao(int num1, int num2) {
 		this.num1 = num1;
 		this.num2 = num2;
 	}
 	
-	public Operacao() {
+	public operacao() {
 		this.num1 = 0;
 		this.num2 = 0;
 		this.resultado = 0;
 	}
-	
-	void medPond(int num1, int num2, int p1, int p2) {
-		this.resultado = ((num1*p1)+(num2*p2))/(p1+p2);
-		return this.resultado;
-		}
 
-	public int calcFat(int num) {
-		int temp = num;
-		for(int i = num - 1; i > 0; i--) {
-			temp = temp * i;
-		}
-		this.resultado = temp;
+	void subtrair() {
+		this.resultado= this.num1 - this.num2;
 	}
-
+	
+	double calcularPotencia() {
+		int i= num2;
+		double r=1;
+		while(i>=1) {
+			r*= num1;
+			i--;
+		}
+		return this.resultado= r;
+	}
+	
 	void soma() {
 		this.resultado = this.num1 + this.num2;	
 	}
@@ -67,4 +69,3 @@ public class Operacao {
 		this.resultado = resultado;
 	}
 }
-//a
